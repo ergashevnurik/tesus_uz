@@ -573,27 +573,22 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group" data-aos="fade-up" data-aos-delay="100">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Ваша номер телефона" required>
+                  <input type="text" class="form-control" name="email" id="phone" placeholder="Ваша номер телефона" required>
                 </div>
               </div>
               <div class="form-group mt-3" data-aos="fade-up" data-aos-delay="300">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Адрес" required>
+                <input type="text" class="form-control" name="subject" id="address" placeholder="Адрес" required>
               </div>
               <div class="form-group mt-3" data-aos="fade-up" data-aos-delay="400">
-                <textarea class="form-control" name="message" rows="5" placeholder="Чем можем помочь" required></textarea>
+                <textarea class="form-control" id="details" name="message" rows="5" placeholder="Чем можем помочь" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center" data-aos="fade-up" data-aos-delay="500"><button type="submit">Связаться</button></div>
+              <div class="text-center" data-aos="fade-up" data-aos-delay="500"><button id="submit-btn" type="submit">Связаться</button></div>
             </form>
 
           </div>
@@ -645,6 +640,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Bot JS File -->
+  <script src="assets/js/bot.js"></script>
 
 </body>
 
